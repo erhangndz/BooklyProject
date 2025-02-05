@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace BooklyProject.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         BooklyContext context = new BooklyContext();

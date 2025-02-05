@@ -26,7 +26,7 @@
                 <div class="swiper-slide">
                     <div class="card position-relative p-4 border rounded-3">
                         <div class="position-absolute">
-                            <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">@(item.IsOnSale? item.DiscountRate.ToString()+ "%"  : string.Empty)</p>
+                            <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">@(item.IsOnSale? item.DiscountRate.ToString()+ "% İndirim"  : string.Empty)</p>
                         </div>
                         <img src="@item.CoverImageUrl" class="img-fluid shadow-sm" alt="product item">
                         <h6 class="mt-4 mb-0 fw-bold"><a href="index.html">@item.BookName</a></h6>
@@ -104,7 +104,7 @@ else
                                
                             </div>
                         </div>
-                        <span class="price text-primary fw-bold mb-2 fs-5">@item.Price ₺</span>
+                        <span class="price text-primary fw-bold mb-2 fs-5">@( item.IsOnSale ? item.Price *  (100- item.DiscountRate) / 100 : item.Price ) ₺</span>
                         <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
                           
                            

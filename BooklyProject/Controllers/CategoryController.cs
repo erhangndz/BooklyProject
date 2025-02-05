@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace BooklyProject.Controllers
 {
-    [Authorize]
+    
     public class CategoryController : Controller
     {
         BooklyContext context = new BooklyContext();

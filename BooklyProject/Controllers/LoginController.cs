@@ -10,6 +10,7 @@ using System.Web.Security;
 
 namespace BooklyProject.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         BooklyContext context= new BooklyContext();
