@@ -19,6 +19,7 @@ namespace BooklyProject.Context
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
 
 

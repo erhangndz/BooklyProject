@@ -1,7 +1,9 @@
 ﻿using BooklyProject.Context;
+using BooklyProject.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
@@ -28,6 +30,20 @@ namespace BooklyProject.Controllers
         {
             var values = context.Books.OrderByDescending(x=>x.BookId).Take(6).ToList();
             return PartialView(values);
+        }
+
+        public PartialViewResult SendMessage()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public ActionResult SendMessage(Message model)
+        {
+            context.Messages.Add(model);
+            context.SaveChanges();
+            Thread.Sleep(2000);
+            return RedirectToAction("Index");
         }
     }
 }

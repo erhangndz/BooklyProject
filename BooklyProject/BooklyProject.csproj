@@ -142,6 +142,7 @@
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\BookCategory.cs" />
     <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\PhotoGallery.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\Testimonial.cs" />
@@ -155,6 +156,10 @@
     <Compile Include="Migrations\202501291816561_mig_admin_table.cs" />
     <Compile Include="Migrations\202501291816561_mig_admin_table.Designer.cs">
       <DependentUpon>202501291816561_mig_admin_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502121855375_mig_message_added.cs" />
+    <Compile Include="Migrations\202502121855375_mig_message_added.Designer.cs">
+      <DependentUpon>202502121855375_mig_message_added.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -326,6 +331,8 @@
     <Content Include="Views\ErrorPage\NotFound404.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Dashboard\BookList.cshtml" />
+    <Content Include="Views\Default\SendMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -364,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202501291816561_mig_admin_table.resx">
       <DependentUpon>202501291816561_mig_admin_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502121855375_mig_message_added.resx">
+      <DependentUpon>202502121855375_mig_message_added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

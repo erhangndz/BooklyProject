@@ -10,9 +10,9 @@ namespace BooklyProject.Entities
         public int BookCategoryId { get; set; }
 
         public int BookId { get; set; }
-        public Book Book { get; set; }
+        public virtual Book Book { get; set; }
 
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

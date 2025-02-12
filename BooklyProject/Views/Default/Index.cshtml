@@ -230,49 +230,18 @@
                         <ul id="navbar"
                             class="navbar-nav text-uppercase justify-content-start justify-content-lg-center align-items-start align-items-lg-center flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link me-4 active" href="index.html">Home</a>
+                                <a class="nav-link me-4 active" href="/Default/Index">Ana Sayfa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="index.html">About</a>
+                                <a class="nav-link me-4" href="#category">Kategoriler</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="index.html">Shop</a>
+                                <a class="nav-link me-4" href="#book">Kitaplar</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="index.html">Blogs</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                   aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu animate slide border">
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Single Product</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Checkout</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Single Post</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item fw-light">Contact</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" href="index.html">Contact</a>
+                                <a class="nav-link me-4" href="#message">İletişim</a>
                             </li>
                         </ul>
                         <div class="user-items d-flex">
@@ -589,46 +558,9 @@
         </div>
     </section>
 
-   @Html.Action("DefaultBooks")
+    @Html.Action("DefaultBooks")
 
-    <section id="limited-offer" class="padding-large"
-             style="background-image: url(~/Templates/Bookly/images/banner-image-bg-1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 800px;">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6 text-center">
-                    <div class="image-holder">
-                        <img src="~/Templates/Bookly/images/banner-image3.png" class="img-fluid" alt="banner">
-                    </div>
-                </div>
-                <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
-                    <h2>30% Discount on all items. Hurry Up !!!</h2>
-                    <div id="countdown-clock" class="text-dark d-flex align-items-center my-3">
-                        <div class="time d-grid pe-3">
-                            <span class="days fs-1 fw-normal"></span>
-                            <small>Days</small>
-                        </div>
-                        <span class="fs-1 text-primary">:</span>
-                        <div class="time d-grid pe-3 ps-3">
-                            <span class="hours fs-1 fw-normal"></span>
-                            <small>Hrs</small>
-                        </div>
-                        <span class="fs-1 text-primary">:</span>
-                        <div class="time d-grid pe-3 ps-3">
-                            <span class="minutes fs-1 fw-normal"></span>
-                            <small>Min</small>
-                        </div>
-                        <span class="fs-1 text-primary">:</span>
-                        <div class="time d-grid ps-3">
-                            <span class="seconds fs-1 fw-normal"></span>
-                            <small>Sec</small>
-                        </div>
-                    </div>
-                    <a href="index.html" class="btn mt-3">Shop Collection</a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+   
 
     <section id="items-listing" class="padding-large">
         <div class="container">
@@ -1164,57 +1096,12 @@
         </div>
     </section>
 
-    <section id="latest-posts" class="padding-large">
-        <div class="container">
-            <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-                <h3 class="d-flex align-items-center">Latest posts</h3>
-                <a href="index.html" class="btn">View All</a>
-            </div>
-            <div class="row">
-                <div class="col-md-3 posts mb-4">
-                    <img src="~/Templates/Bookly/images/post-item1.jpg" alt="post image" class="img-fluid rounded-3">
-                    <a href="blog.html" class="fs-6 text-primary">Books</a>
-                    <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
-                    <p class="mb-2">
-                        Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                        five essential gadge. <span><a class="text-decoration-underline text-black-50" href="index.html">Read More</a></span>
-                    </p>
-                </div>
-                <div class="col-md-3 posts mb-4">
-                    <img src="~/Templates/Bookly/images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
-                    <a href="blog.html" class="fs-6 text-primary">Books</a>
-                    <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">The Fascinating Realm of Science Fiction</a></h4>
-                    <p class="mb-2">
-                        Explore the intersection of technology and sustainability in our latest blog post. Learn about
-                        the innovative <span><a class="text-decoration-underline text-black-50" href="index.html">Read More</a></span>
-                    </p>
-                </div>
-                <div class="col-md-3 posts mb-4">
-                    <img src="~/Templates/Bookly/images/post-item3.jpg" alt="post image" class="img-fluid rounded-3">
-                    <a href="blog.html" class="fs-6 text-primary">Books</a>
-                    <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Finding Love in the Pages of a Book</a></h4>
-                    <p class="mb-2">
-                        Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-                        wearable technology. <span><a class="text-decoration-underline text-black-50" href="index.html">Read More</a></span>
-                    </p>
-                </div>
-                <div class="col-md-3 posts mb-4">
-                    <img src="~/Templates/Bookly/images/post-item4.jpg" alt="post image" class="img-fluid rounded-3">
-                    <a href="blog.html" class="fs-6 text-primary">Books</a>
-                    <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
-                    <p class="mb-2">
-                        In today's remote work environment, productivity is key. Discover the top apps and tools that
-                        can help you stay <span><a class="text-decoration-underline text-black-50" href="index.html">Read More</a></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  
 
     <section id="instagram">
         <div class="container">
             <div class="text-center mb-4">
-                <h3>Instagram</h3>
+                <h3>Fotoğraf Galerisi</h3>
             </div>
             <div class="row">
                 <div class="col-md-2">
@@ -1292,6 +1179,9 @@
             </div>
         </div>
     </section>
+
+    @Html.Action("SendMessage")
+
 
     <footer id="footer" class="padding-large">
         <div class="container">
@@ -1447,5 +1337,6 @@
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="~/Templates/Bookly/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

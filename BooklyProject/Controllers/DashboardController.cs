@@ -18,12 +18,20 @@ namespace BooklyProject.Controllers
             ViewBag.testimonialCount = context.Testimonials.Count();
 
             ViewBag.avgPrice = context.Books.Average(x => x.Price).ToString("000.00");
-
             ViewBag.mostExpensiveBook = context.Books.OrderByDescending(x=>x.Price).Select(x=>x.BookName).FirstOrDefault();
             ViewBag.cheapestBook = context.Books.OrderBy(x => x.Price).Select(x => x.BookName).FirstOrDefault();
             ViewBag.onSaleBookCount = context.Books.Where(x => x.IsOnSale).Count();
 
+
+
             return View();
+        }
+
+
+        public PartialViewResult BookList()
+        {
+            var values = context.Books.ToList();
+            return PartialView(values);
         }
     }
 }
