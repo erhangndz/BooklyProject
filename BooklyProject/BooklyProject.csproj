@@ -136,6 +136,7 @@
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Banner.cs" />
@@ -161,7 +162,12 @@
     <Compile Include="Migrations\202502121855375_mig_message_added.Designer.cs">
       <DependentUpon>202502121855375_mig_message_added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202502191709367_added_imageUrl_in_admin_table.cs" />
+    <Compile Include="Migrations\202502191709367_added_imageUrl_in_admin_table.Designer.cs">
+      <DependentUpon>202502191709367_added_imageUrl_in_admin_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ChangePasswordViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -333,10 +339,12 @@
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Dashboard\BookList.cshtml" />
     <Content Include="Views\Default\SendMessage.cshtml" />
+    <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Profile\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -374,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502121855375_mig_message_added.resx">
       <DependentUpon>202502121855375_mig_message_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502191709367_added_imageUrl_in_admin_table.resx">
+      <DependentUpon>202502191709367_added_imageUrl_in_admin_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

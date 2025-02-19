@@ -16,6 +16,8 @@ namespace BooklyProject.Controllers
         BooklyContext context= new BooklyContext();
         public ActionResult Index()
         {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
             return View();
         }
 
@@ -34,6 +36,13 @@ namespace BooklyProject.Controllers
             Session["currentUser"] = admin.UserName;
             return RedirectToAction("Index", "Category");
 
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Default");
         }
     }
 }

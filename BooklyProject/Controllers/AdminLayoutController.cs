@@ -17,11 +17,15 @@ namespace BooklyProject.Controllers
 
         public ActionResult AdminLayoutNavbar()
         {
-            var userName = Session["currentUser"];
+            var userName = Session["currentUser"].ToString();
 
-            var nameSurname = context.Admins.Where(x => x.UserName == userName).Select(x => x.FirstName + " " + x.LastName).FirstOrDefault(); 
+            ViewBag.nameSurname = context.Admins.Where(x => x.UserName == userName).Select(x => x.FirstName + " " + x.LastName).FirstOrDefault(); 
 
-            ViewBag.nameSurname = nameSurname;
+
+
+            ViewBag.imageUrl = context.Admins.Where(x => x.UserName == userName).Select(x => x.ImageUrl).FirstOrDefault();
+
+
 
             return PartialView();
         }
